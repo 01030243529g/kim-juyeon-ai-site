@@ -1,3 +1,5 @@
+import { allColumns } from "../lib/columns";
+
 const navigation = [
   ["소개", "#about"],
   ["강의분야", "#programs"],
@@ -270,6 +272,14 @@ export default function Home() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="education-columns section-pad" id="columns" aria-labelledby="columns-title">
+        <div className="section-heading"><p className="section-kicker">LEARN &amp; PRACTICE</p><h2 id="columns-title">생활에 바로 쓰는<br />쉬운 AI 교육 칼럼</h2></div>
+        <div className="column-list">{allColumns.slice(0, 3).map(column => <article className="column-item" key={column.slug}>
+          <p className="column-meta">{column.category} · <time dateTime={column.date}>{column.date}</time></p>
+          <h3><a href={`/columns/${column.slug}`}>{column.title} ↗</a></h3><p>{column.description}</p>
+        </article>)}</div><a className="column-back" href="/columns">교육 칼럼 모두 보기 →</a>
       </section>
 
       <section className="qualifications section-pad">
