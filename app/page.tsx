@@ -5,6 +5,7 @@ const navigation = [
   ["강의분야", "#programs"],
   ["주요경력", "#career"],
   ["저서", "#books"],
+  ["교육 칼럼", "#columns"],
   ["문의", "#contact"],
 ];
 
@@ -101,12 +102,13 @@ const books = [
     desc: "마음을 다독이는 따뜻한 기록",
     image: "/book-01.webp",
     paperUrl: "https://www.yes24.com/product/goods/173934714",
+    ebookUrl: "https://www.yes24.com/product/goods/172794745",
   },
 ];
 
 const qualifications = [
   "생성형 AI교육 전문가", "AI콘텐츠강사", "인지훈련지도사", "인성지도사 1급", "코딩지도사 1급",
-  "SNS마케팅 전문가 1급", "CapCut 크리에이터", "금천구 중장년 퍼실리테이터",
+  "SNS마케팅 전문가 1급", "CapCut 크리에이터", "금천구 중장년 퍼실리테이터", "서울형 디지털튜터 양성과정 수료",
 ];
 
 export default function Home() {
